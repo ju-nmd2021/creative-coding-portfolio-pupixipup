@@ -1,9 +1,16 @@
 [
   {
-    "file": "experiments/example.js",
-    "name": "Name of your experiment",
-    "description": "Explains the what and the why. What is the main idea? What is the purpose? Describes the coding process and implementation choices and gives a high level system overview.",
-    "background": "Positions the work in a context by presenting related work and introducing aesthetic or scientific theories related to the work.",
+    "file": "experiments/lines.js",
+    "name": "Repeating lines",
+    "description": "P5JS experiment with pseudo-3d moving lines as a refreser for myself. Rows of moving lines in a purple gradient. Lines are drawn withiin a for-loop. Their rotation is based on a framerate of the canvas.",
+    "background": "It is an attempt to make pseudo-3d graphics. Lines are moving in 2D with lerp() function based on the framerate. Repeatings patterns create visual harmony and rythm",
+    "github": "https://www.github.com/pixelkind"
+  },
+  {
+    "file": "experiments/noise.js",
+    "name": "Grey noise layers",
+    "description": "Reocurring grey layers. The noise is generated with the noise() function. ",
+    "background": "Color pallete is based on dull colors - grey and black.",
     "github": "https://www.github.com/pixelkind"
   }
 ]
