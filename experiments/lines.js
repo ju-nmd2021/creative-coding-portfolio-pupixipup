@@ -1,3 +1,4 @@
+// Was initially based on https://generativeartistry.com/tutorials/tiled-lines/
 function setup() {
   createCanvas(innerWidth, innerHeight);
   background(34, 39, 46);

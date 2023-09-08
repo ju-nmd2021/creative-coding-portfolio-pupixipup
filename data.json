@@ -12,5 +12,11 @@
     "description": "Reocurring grey layers. The noise is generated with the noise() function. ",
     "background": "Color pallete is based on dull colors - grey and black.",
     "github": "https://www.github.com/pixelkind"
+  },
+  {
+    "file": "experiments/flowfield.js",
+    "name": "Gradient flowfield",
+    "description": "Points are evenly sprayed across the screen. Points move in a direction defined with noise() and vectors.",
+    "background": "Gradient colors and a lot of gradually appearing points made with Perlin noise result in a calm and relaxing animation."
   }
 ]

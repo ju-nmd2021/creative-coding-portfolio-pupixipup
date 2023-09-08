@@ -17,8 +17,7 @@ function draw() {
       const range = y + i * 40 * noise(i);
 	vertex(x, range);
   }
-
- 
+  
   vertex(height, width);
         
   fill(255  - noise(i) * 255,255  - noise(i) * 255 ,255 - noise(i) * 255);
