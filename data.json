@@ -7,6 +7,13 @@
     "github": "https://www.github.com/pixelkind"
   },
   {
+    "file": "experiments/maze.js",
+    "name": "Repeating lines",
+    "description": "Randomly generated maze",
+    "background": "",
+    "github": "https://www.github.com/pixelkind"
+  },
+  {
     "file": "experiments/noise.js",
     "name": "Grey noise layers",
     "description": "Reocurring grey layers. The noise is generated with the noise() function. ",

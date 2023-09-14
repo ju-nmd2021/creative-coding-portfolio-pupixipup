@@ -24,7 +24,7 @@ function draw() {
     const g = map(point.y, 0, innerHeight, 0, 255);
     const b = map(point.x, 0, innerWidth, 255, 0);
     fill(r,g,b);
-    const position = noise(point.x * multiplier, point.y * multiplier);
+    const position = noise(point.x * multiplier, point * multiplier);
     const angle = map(position, 0, 1, 0, 720);
     const vector = createVector(sin(angle), cos(angle));
     point.add(vector); 
