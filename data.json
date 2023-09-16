@@ -8,9 +8,16 @@
   },
   {
     "file": "experiments/maze.js",
-    "name": "Repeating lines",
+    "name": "Maze",
     "description": "Randomly generated maze",
     "background": "",
+    "github": "https://www.github.com/pixelkind"
+  },
+  {
+    "file": "experiments/maze-1.js",
+    "name": "Maze 1",
+    "description": "Randomly generated maze",
+    "background": "Variant of maze.js. This time half-circles are used instead of lines",
     "github": "https://www.github.com/pixelkind"
   },
   {
