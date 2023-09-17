@@ -4,33 +4,41 @@
     "name": "Repeating lines",
     "description": "P5JS experiment with pseudo-3d moving lines as a refreser for myself. Rows of moving lines in a purple gradient. Lines are drawn withiin a for-loop. Their rotation is based on a framerate of the canvas.",
     "background": "It is an attempt to make pseudo-3d graphics. Lines are moving in 2D with lerp() function based on the framerate. Repeatings patterns create visual harmony and rythm",
-    "github": "https://www.github.com/pixelkind"
+    "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
+  },
+  {
+    "file": "experiments/rect.js",
+    "name": "Rectangles and circles",
+    "description": "Static art with randomly placed figures.",
+    "background": "Rectangles and circles are randomly placed on the canvas. Each element also has random color",
+    "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
   },
   {
     "file": "experiments/maze.js",
     "name": "Maze",
     "description": "Randomly generated maze",
     "background": "",
-    "github": "https://www.github.com/pixelkind"
+    "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
   },
   {
     "file": "experiments/maze-1.js",
     "name": "Maze 1",
     "description": "Randomly generated maze",
     "background": "Variant of maze.js. This time half-circles are used instead of lines",
-    "github": "https://www.github.com/pixelkind"
+    "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
   },
   {
     "file": "experiments/noise.js",
     "name": "Grey noise layers",
     "description": "Reocurring grey layers. The noise is generated with the noise() function. ",
     "background": "Color pallete is based on dull colors - grey and black.",
-    "github": "https://www.github.com/pixelkind"
+    "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
   },
   {
     "file": "experiments/flowfield.js",
     "name": "Gradient flowfield",
     "description": "Points are evenly sprayed across the screen. Points move in a direction defined with noise() and vectors.",
-    "background": "Gradient colors and a lot of gradually appearing points made with Perlin noise result in a calm and relaxing animation."
+    "background": "Gradient colors and a lot of gradually appearing points made with Perlin noise result in a calm and relaxing animation.",
+    "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
   }
 ]
