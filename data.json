@@ -14,6 +14,13 @@
     "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
   },
   {
+    "file": "experiments/rect-1.js",
+    "name": "Rectangles and circles (1)",
+    "description": "Static art with randomly placed figures. Variation of the previous work",
+    "background": "Rectangles and circles are randomly placed on the canvas. Each element also has random color",
+    "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
+  },
+  {
     "file": "experiments/maze.js",
     "name": "Maze",
     "description": "Randomly generated maze",
