@@ -1,9 +1,9 @@
 [
   {
-    "file": "experiments/lines.js",
-    "name": "Repeating lines",
-    "description": "P5JS experiment with pseudo-3d moving lines as a refreser for myself. Rows of moving lines in a purple gradient. Lines are drawn withiin a for-loop. Their rotation is based on a framerate of the canvas.",
-    "background": "It is an attempt to make pseudo-3d graphics. Lines are moving in 2D with lerp() function based on the framerate. Repeatings patterns create visual harmony and rythm",
+    "file": "experiments/sound.js",
+    "name": "Sound visualizer",
+    "description": "Synth sound visualizer. Sound is visualized with waveform",
+    "background": "The work is made in order to familiarize with ToneJS library.",
     "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
   },
   {

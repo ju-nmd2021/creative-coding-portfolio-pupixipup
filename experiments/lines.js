@@ -1,48 +1,29 @@
-// Was initially based on https://generativeartistry.com/tutorials/tiled-lines/
+// Perlin Noise inspired by https://codepen.io/pixelkind/pen/wvRMVwy
+
 function setup() {
-  createCanvas(innerWidth, innerHeight);
-  background(34, 39, 46);
-  frameRate(30);
+  createCanvas(250, 250);
+  frameRate(60);
 }
 
-const step = 50;
-const lineLength = 0.5; // Fraction of step size for line length
-const lineOffset = -100;
-const screenOffset = Math.abs(lineOffset);
+function bBackground() {
+  noiseSeed(100);
+  noStroke();
+  const divider = 0.01;
+  for (let x = 0; x < 400; x++) {
+    for (let y = 0; y < 400; y++) {
+      const value = noise(x * divider, y * divider, frameCount * 0.05) * 300;
 
-let patterns = [];
-let multiplier = 1;
+      // I was looking for ways to change color of the project. Chatgpt suggested me to change color by using map function. To understand how map function works i checked the reference page. Line 17 & 18 inspired by https://p5js.org/reference/#/p5/map line & Chatgpt
+      const g = map(value, 0, 255, 40, 255);
+      const b = map(value, 0, 255, 200, 255);
+
+      fill(0, g, b, 100);
+      rect(x, y, 20, 1);
+    }
+  }
+}
 
 function draw() {
-  background(34, 39, 46);
-  let progress = frameCount / 30;
-  if (progress % 1 === 0) {
-    frameCount = 0;
-  }
-  let direction = 0;
-  if (progress % 1 === 0) {
-    if (multiplier === 1) {
-      multiplier = -1;
-    } else {
-      multiplier = 1;
-    }
-  }
-
-  direction = progress * multiplier;
-  for (let x = 0; x < innerWidth + screenOffset; x += step) {
-    for (let y = 0; y < innerHeight + screenOffset; y += step) {
-      drawLine(x, y, step, step,  direction);
-    }
-  }
-}
-
-
-function drawLine(x, y, toX, toY, progress) {
-  const startX = x;
-  const startY = lerp(y, y + toY, progress);
-  const endX = lerp(x, x + toX, progress + lineLength);
-  const endY = lerp(y, y + toY, progress + lineLength);
-
-  line(startX + lineOffset, startY + lineOffset, endX + lineOffset - 10, endY + lineOffset);
-  stroke(x, y, 255);
+  background(255);
+  bBackground();
 }

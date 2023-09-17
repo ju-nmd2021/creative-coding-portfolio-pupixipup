@@ -37,7 +37,6 @@ p {
   grid-row: 1 / 4;
   grid-column: 1 / 2;
   background-color: white;
-  z-index: -100;
 }
 
 header {

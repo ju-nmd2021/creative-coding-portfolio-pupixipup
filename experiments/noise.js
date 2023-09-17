@@ -19,7 +19,6 @@ function draw() {
   }
   
   vertex(height, width);
-        
   fill(255  - noise(i) * 255,255  - noise(i) * 255 ,255 - noise(i) * 255);
   endShape();
 }
