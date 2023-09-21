@@ -42,6 +42,20 @@
     "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
   },
   {
+    "file": "experiments/noise-1.js",
+    "name": "Gradient flowfield",
+    "description": "Points are evenly sprayed across the screen. Points move in a direction defined with noise() and vectors.",
+    "background": "Gradient colors and a lot of gradually appearing points made with Perlin noise result in a calm and relaxing animation.",
+    "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
+  },
+  {
+    "file": "experiments/flowfield-2.js",
+    "name": "Gradient flowfield",
+    "description": "Points are evenly sprayed across the screen. Points move in a direction defined with noise() and vectors.",
+    "background": "Gradient colors and a lot of gradually appearing points made with Perlin noise result in a calm and relaxing animation.",
+    "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
+  },
+  {
     "file": "experiments/flowfield.js",
     "name": "Gradient flowfield",
     "description": "Points are evenly sprayed across the screen. Points move in a direction defined with noise() and vectors.",

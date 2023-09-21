@@ -28,7 +28,7 @@ function draw() {
     const angle = map(position, 0, 1, 0, 720);
     const vector = createVector(sin(angle), cos(angle));
     point.add(vector); 
-    ellipse(point.x, point.y, 2);
+    ellipse(point.x, point.y, 4);
   });
 
 }

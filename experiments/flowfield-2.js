@@ -5,15 +5,17 @@ function setup() {
   createCanvas(innerWidth, innerHeight);
   background(50);
 
-  const density = 20;
-  const space = width / density;
-
+  const density = 10;
+  for (let i = 0; i < innerWidth; i += density) {
+    for (let j = 0; j < innerHeight; j += density) {
+      const p = createVector(i, j);
+      points.push(p);
+    }
+  }
 }
 
 function draw() {
   noStroke();
-
-  points.push(createVector(mouseX, mouseY));
   
   points.forEach(point => {
     const r = map(point.x, 0, innerWidth, 100, 150);
@@ -21,10 +23,10 @@ function draw() {
     const b = map(point.x, 0, innerWidth, 200, 250);
     fill(r,g,b);
     const position = noise(point.x * multiplier, point.y * multiplier);
-    const angle = map(position, 0, 1, 0, 720);
+    const angle = map(position, 0, 1, 0, 30);
     const vector = createVector(sin(angle), cos(angle));
     point.add(vector); 
-    ellipse(point.x, point.y, 2);
+    ellipse(point.x, point.y, 2); 
   });
 
 }
