@@ -37,26 +37,27 @@ function initAudio() {
   synth = new Tone.Synth();
   synth.toDestination();
   synth.oscillator.type = "sine";
-  waveform = new Tone.Waveform();
+  waveform = new Tone.Waveform(); // visualize sound wave
   Tone.Master.connect(waveform);
   Tone.Master.volume.value = -9;
 }
 
 function draw() {
    if (ready) {
-    background(0, 20);
+    background("grey");
     stroke("white");
     noFill();
     let buffer = waveform.getValue(0);
     let start = 0;
-    for (let i = 1; i < buffer.length; i++) {
+    for (let i = 1; i < buffer.length; i++) { 
       if (buffer[i-1] < 0 && buffer[i] >= 0) {
-        start = i;
+        start = i; // indicates where the wave cycle starts
         break;
       }
     }
-    let end = buffer.length / 2 + start;
+    let end = buffer.length / 2 + start; // indicates where the wave cycle ends
     beginShape();
+    // create shape from start to end points
     for (let i = start; i < end; i++) {
       let x = map(i, start, end, 0, width);
       let y = map(buffer[i], -1, 1, 0, height);
@@ -64,15 +65,11 @@ function draw() {
     }
     endShape();
    } else {
-    background('black');
-    fill('white');
+    background('grey');
+    fill('black');
     textAlign(CENTER, CENTER);
     text("click to start", width / 2, height / 2);
    }
-}
-
-function changeType() {
-  synth.oscillator.type = "sawtooth"
 }
 
 function mousePressed() {
@@ -83,3 +80,17 @@ function mousePressed() {
   }
 synth.triggerAttackRelease(random(220, 440), "8n");
 }
+
+setInterval(() => {
+  if (ready) {
+    const minFrequency = 220; // Minimum frequency
+    const maxFrequency = 440; // Maximum frequency
+    const time = millis() / 1000; // Convert milliseconds to seconds for time-based noise. Use time to get a different noise value each time
+    const frequency = map(noise(time / 10), 0, 1, minFrequency, maxFrequency);
+    console.log(time, frequency);
+    if (Math.random() > 0.5) {
+      synth.oscillator.type = random(["sine", "triangle", "sawtooth", "square"]);
+    }
+    synth.triggerAttackRelease(frequency, "8n");
+  }
+}, 400);
