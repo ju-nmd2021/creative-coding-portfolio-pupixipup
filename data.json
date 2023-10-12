@@ -1,12 +1,5 @@
 [
   {
-    "file": "experiments/sound.js",
-    "name": "Sound visualizer",
-    "description": "Synth sound visualizer. Sound is visualized with waveform",
-    "background": "The work is made in order to familiarize with ToneJS library.",
-    "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
-  },
-  {
     "file": "experiments/rect.js",
     "name": "Rectangles and circles",
     "description": "Static art with randomly placed figures.",
@@ -60,6 +53,13 @@
     "name": "Gradient flowfield",
     "description": "Points are evenly sprayed across the screen. Points move in a direction defined with noise() and vectors.",
     "background": "Gradient colors and a lot of gradually appearing points made with Perlin noise result in a calm and relaxing animation.",
+    "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
+  },
+  {
+    "file": "experiments/sound.js",
+    "name": "Sound visualizer",
+    "description": "Synth sound visualizer. Sound is visualized with waveform",
+    "background": "The work is made in order to familiarize with ToneJS library.",
     "github": "https://github.com/ju-nmd2021/creative-coding-portfolio-pupixipup"
   }
 ]
